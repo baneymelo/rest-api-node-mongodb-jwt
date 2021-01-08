@@ -5,7 +5,8 @@ import mongoose from "mongoose";
 mongoose.connect('mongodb://localhost/crud', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: true
+    useFindAndModify: true,
+    useCreateIndex: true
 })
     .then(db => console.log('DB is connected'))
     .catch(err => console.log(err))
