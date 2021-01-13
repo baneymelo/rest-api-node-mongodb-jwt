@@ -14,7 +14,7 @@ const userSchema = new Schema({
         type: String,
         unique: true
     },
-    role:[{
+    roles:[{
         ref: 'Role',
         type: Schema.Types.ObjectId
     }]
