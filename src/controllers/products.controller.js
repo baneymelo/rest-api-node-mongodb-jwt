@@ -30,5 +30,3 @@ export const deleteProductById = async (req, res) => {
     await Product.findByIdAndDelete(productId);
     res.status(204).json();
 }
-
- 
